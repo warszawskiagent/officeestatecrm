@@ -1,0 +1,309 @@
+/**
+ * EstateOffice Frontend Styles
+ * Version: 0.5.5
+ * Author: Tomasz Obarski
+ * Website: http://warszawskiagent.pl
+ */
+
+/* Reset i zmienne */
+:root {
+    --eo-primary: #2c3e50;
+    --eo-secondary: #34495e;
+    --eo-accent: #3498db;
+    --eo-success: #27ae60;
+    --eo-warning: #f39c12;
+    --eo-danger: #e74c3c;
+    --eo-light: #ecf0f1;
+    --eo-dark: #2c3e50;
+    --eo-border: #bdc3c7;
+    --eo-text: #333333;
+    --eo-text-light: #7f8c8d;
+    --eo-shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* Layout główny */
+.eo-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.eo-wrapper {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--eo-shadow);
+    padding: 20px;
+}
+
+/* Nagłówek sekcji */
+.eo-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--eo-border);
+}
+
+.eo-section-title {
+    font-size: 24px;
+    color: var(--eo-primary);
+    font-weight: 600;
+}
+
+/* Style dla tabel */
+.eo-table-container {
+    overflow-x: auto;
+    margin: 20px 0;
+}
+
+.eo-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+}
+
+.eo-table th {
+    background: var(--eo-primary);
+    color: #ffffff;
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.eo-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid var(--eo-border);
+    color: var(--eo-text);
+}
+
+.eo-table tr:hover {
+    background: var(--eo-light);
+}
+
+.eo-table a {
+    color: var(--eo-accent);
+    text-decoration: none;
+}
+
+.eo-table a:hover {
+    text-decoration: underline;
+}
+
+/* Nieruchomości - tabela */
+.eo-properties-table .eo-price-column {
+    text-align: right;
+    font-weight: 600;
+}
+
+.eo-properties-table .eo-area-column {
+    text-align: center;
+}
+
+.eo-properties-table .eo-status-column {
+    text-align: center;
+}
+
+/* Umowy - tabela */
+.eo-contracts-table .eo-contract-number {
+    font-weight: 600;
+    color: var(--eo-primary);
+}
+
+.eo-contracts-table .eo-date-column {
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* Klienci - tabela */
+.eo-clients-table .eo-client-name {
+    font-weight: 600;
+}
+
+.eo-clients-table .eo-contact-column {
+    white-space: nowrap;
+}
+
+/* Wyszukiwarka */
+.eo-search-container {
+    margin-bottom: 20px;
+}
+
+.eo-search-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 15px;
+    border: 1px solid var(--eo-border);
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.eo-search-input:focus {
+    outline: none;
+    border-color: var(--eo-accent);
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+/* Przyciski */
+.eo-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.eo-button-primary {
+    background: var(--eo-accent);
+    color: #ffffff;
+}
+
+.eo-button-primary:hover {
+    background: #2980b9;
+}
+
+.eo-button-secondary {
+    background: var(--eo-secondary);
+    color: #ffffff;
+}
+
+.eo-button-secondary:hover {
+    background: #2c3e50;
+}
+
+/* Status i etapy */
+.eo-status {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.eo-status-active {
+    background: var(--eo-success);
+    color: #ffffff;
+}
+
+.eo-status-pending {
+    background: var(--eo-warning);
+    color: #ffffff;
+}
+
+.eo-status-completed {
+    background: var(--eo-primary);
+    color: #ffffff;
+}
+
+/* Paginacja */
+.eo-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.eo-pagination-item {
+    margin: 0 5px;
+    padding: 8px 12px;
+    border: 1px solid var(--eo-border);
+    border-radius: 4px;
+    color: var(--eo-text);
+    text-decoration: none;
+}
+
+.eo-pagination-item.active {
+    background: var(--eo-accent);
+    color: #ffffff;
+    border-color: var(--eo-accent);
+}
+
+.eo-pagination-item:hover:not(.active) {
+    background: var(--eo-light);
+}
+
+/* Responsywność */
+@media screen and (max-width: 768px) {
+    .eo-container {
+        padding: 10px;
+    }
+    
+    .eo-section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .eo-table th,
+    .eo-table td {
+        padding: 8px 10px;
+    }
+    
+    .eo-search-input {
+        max-width: 100%;
+    }
+    
+    .eo-button {
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
+
+/* Komunikaty i powiadomienia */
+.eo-message {
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 4px;
+    border-left: 4px solid transparent;
+}
+
+.eo-message-success {
+    background: #d4edda;
+    border-left-color: var(--eo-success);
+    color: #155724;
+}
+
+.eo-message-warning {
+    background: #fff3cd;
+    border-left-color: var(--eo-warning);
+    color: #856404;
+}
+
+.eo-message-error {
+    background: #f8d7da;
+    border-left-color: var(--eo-danger);
+    color: #721c24;
+}
+
+/* Pomocnicze klasy */
+.eo-text-center {
+    text-align: center;
+}
+
+.eo-text-right {
+    text-align: right;
+}
+
+.eo-mt-20 {
+    margin-top: 20px;
+}
+
+.eo-mb-20 {
+    margin-bottom: 20px;
+}
+
+.eo-hidden {
+    display: none;
+}
+
+.eo-clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}

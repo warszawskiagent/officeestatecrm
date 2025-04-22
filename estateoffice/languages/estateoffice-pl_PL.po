@@ -1,0 +1,553 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: EstateOffice 0.5.5\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/estateoffice\n"
+"POT-Creation-Date: 2025-02-20 10:00:00+00:00\n"
+"PO-Revision-Date: 2025-02-20 10:00:00+00:00\n"
+"Last-Translator: Tomasz Obarski\n"
+"Language-Team: \n"
+"Language: pl_PL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Generator: EstateOffice\n"
+"X-Domain: estateoffice\n"
+
+# Menu administracyjne
+msgid "EstateOffice"
+msgstr "EstateOffice"
+
+msgid "Dashboard"
+msgstr "Pulpit"
+
+msgid "Most Active Agents"
+msgstr "Najbardziej aktywni Agenci"
+
+msgid "Active Sales Listings"
+msgstr "Liczba aktywnych ofert na Sprzedaż"
+
+msgid "Active Rental Listings"
+msgstr "Liczba aktywnych ofert na Wynajem"
+
+msgid "Active Searches"
+msgstr "Liczba aktywnych poszukiwań"
+
+msgid "Settings"
+msgstr "Ustawienia"
+
+msgid "Google Maps API"
+msgstr "API Map Google"
+
+msgid "Watermark"
+msgstr "Znak wodny"
+
+msgid "Office Logo"
+msgstr "Logo biura"
+
+msgid "Property Fields"
+msgstr "Pola nieruchomości"
+
+msgid "Contract Fields"
+msgstr "Pola Umów"
+
+msgid "Client Fields"
+msgstr "Pola Klientów"
+
+msgid "License"
+msgstr "Licencja"
+
+msgid "About"
+msgstr "O wtyczce"
+
+# Agenci
+msgid "Agents"
+msgstr "Agenci"
+
+msgid "Manage Agents"
+msgstr "Zarządzanie agentami"
+
+msgid "Agent Profile"
+msgstr "Profil agenta"
+
+msgid "Photo"
+msgstr "Zdjęcie"
+
+msgid "Contact Details"
+msgstr "Dane teleadresowe"
+
+msgid "Description/Biography"
+msgstr "Opis/Biografia"
+
+# CRM - Menu Frontend
+msgid "Properties"
+msgstr "Nieruchomości"
+
+msgid "Manage Properties"
+msgstr "Zarządzanie nieruchomościami"
+
+msgid "Offer Number"
+msgstr "Numer oferty"
+
+msgid "Address"
+msgstr "Adres"
+
+msgid "Price"
+msgstr "Cena"
+
+msgid "Price per m²"
+msgstr "Cena za m²"
+
+msgid "Area"
+msgstr "Metraż"
+
+msgid "Number of Rooms"
+msgstr "Liczba pokoi"
+
+msgid "Agent in Charge"
+msgstr "Opiekun"
+
+# Poszukiwania
+msgid "Searches"
+msgstr "Poszukiwania"
+
+msgid "Manage Searches"
+msgstr "Zarządzanie poszukiwaniami"
+
+msgid "Search Number"
+msgstr "Numer poszukiwania"
+
+msgid "Property Type"
+msgstr "Rodzaj nieruchomości"
+
+msgid "Budget"
+msgstr "Budżet"
+
+msgid "Location"
+msgstr "Lokalizacja"
+
+msgid "Transaction Type"
+msgstr "Typ transakcji"
+
+# Umowy
+msgid "Contracts"
+msgstr "Umowy"
+
+msgid "Manage Contracts"
+msgstr "Zarządzanie umowami"
+
+msgid "Contract Number"
+msgstr "Numer umowy"
+
+msgid "Conclusion Date"
+msgstr "Data zawarcia"
+
+msgid "End Date"
+msgstr "Data zakończenia"
+
+msgid "Current Stage"
+msgstr "Aktualny etap"
+
+# Klienci
+msgid "Clients"
+msgstr "Klienci"
+
+msgid "Manage Clients"
+msgstr "Zarządzanie klientami"
+
+msgid "Full Name/Company Name"
+msgstr "Imię i nazwisko/Nazwa"
+
+msgid "Phone"
+msgstr "Telefon"
+
+msgid "Email"
+msgstr "E-mail"
+
+# Typy transakcji
+msgid "SALE"
+msgstr "SPRZEDAŻ"
+
+msgid "PURCHASE"
+msgstr "KUPNO"
+
+msgid "RENT"
+msgstr "WYNAJEM"
+
+msgid "LEASE"
+msgstr "NAJEM"
+
+# Typy nieruchomości
+msgid "APARTMENT"
+msgstr "MIESZKANIE"
+
+msgid "HOUSE"
+msgstr "DOM"
+
+msgid "PLOT"
+msgstr "DZIAŁKA"
+
+msgid "COMMERCIAL"
+msgstr "LOKAL H/U"
+
+# Formularze
+msgid "Add New Contract"
+msgstr "Dodaj nową Umowę"
+
+msgid "Commission Amount"
+msgstr "Wysokość prowizji"
+
+msgid "Indefinite Contract"
+msgstr "Umowa bezterminowa"
+
+msgid "Next"
+msgstr "DALEJ"
+
+msgid "Client Type"
+msgstr "Typ klienta"
+
+msgid "Individual"
+msgstr "Osoba fizyczna"
+
+msgid "Company"
+msgstr "Firma"
+
+# Dane klienta
+msgid "Basic Information"
+msgstr "Dane podstawowe"
+
+msgid "First Name"
+msgstr "Imię"
+
+msgid "Last Name"
+msgstr "Nazwisko"
+
+msgid "Company Name"
+msgstr "Nazwa firmy"
+
+msgid "Representative Name"
+msgstr "Imię i nazwisko reprezentanta"
+
+msgid "Contact Information"
+msgstr "Dane kontaktowe"
+
+msgid "Website"
+msgstr "Strona WWW"
+
+msgid "Identification Data"
+msgstr "Dane identyfikacyjne"
+
+msgid "Personal ID"
+msgstr "PESEL"
+
+msgid "Document Type"
+msgstr "Rodzaj dokumentu"
+
+msgid "Document Number"
+msgstr "Numer dokumentu"
+
+msgid "Tax ID"
+msgstr "NIP"
+
+msgid "National Court Register"
+msgstr "KRS"
+
+msgid "Business Registry Number"
+msgstr "REGON"
+
+# Adresy
+msgid "Residential/Registered Address"
+msgstr "Adres zamieszkania/rejestrowy"
+
+msgid "Street"
+msgstr "Ulica"
+
+msgid "Number"
+msgstr "Numer"
+
+msgid "Apartment"
+msgstr "Lokal"
+
+msgid "Postal Code"
+msgstr "Kod pocztowy"
+
+msgid "City"
+msgstr "Miasto"
+
+msgid "Country"
+msgstr "Kraj"
+
+msgid "Correspondence Address"
+msgstr "Adres korespondencyjny"
+
+msgid "Same as residential address"
+msgstr "Adres korespondencyjny taki sam"
+
+# Nieruchomości
+msgid "Property Details"
+msgstr "Dane Nieruchomości"
+
+msgid "Administrative Rent"
+msgstr "Czynsz administracyjny"
+
+msgid "Year Built"
+msgstr "Rok budowy"
+
+msgid "Floor"
+msgstr "Piętro"
+
+msgid "Number of Floors"
+msgstr "Liczba pięter"
+
+msgid "Number of Bedrooms"
+msgstr "Liczba sypialni"
+
+msgid "Number of Bathrooms"
+msgstr "Liczba łazienek"
+
+msgid "Number of Toilets"
+msgstr "Liczba toalet"
+
+msgid "Plot Shape"
+msgstr "Kształt działki"
+
+msgid "Regular"
+msgstr "Regularny"
+
+msgid "Irregular"
+msgstr "Nieregularny"
+
+msgid "Plot Dimensions"
+msgstr "Wymiary działki"
+
+# Szczegóły budynku
+msgid "Building"
+msgstr "Budynek"
+
+msgid "Finishing Condition"
+msgstr "Stan wykończenia"
+
+msgid "Exposure"
+msgstr "Ekspozycja"
+
+msgid "North"
+msgstr "Północ"
+
+msgid "South"
+msgstr "Południe"
+
+msgid "East"
+msgstr "Wschód"
+
+msgid "West"
+msgstr "Zachód"
+
+msgid "View"
+msgstr "Widok"
+
+msgid "Attic"
+msgstr "Poddasze"
+
+msgid "Multi-level"
+msgstr "Wielopoziomowe"
+
+msgid "Layout"
+msgstr "Rozkład"
+
+msgid "Kitchen"
+msgstr "Kuchnia"
+
+msgid "Kitchenette"
+msgstr "Aneks"
+
+msgid "Separate Kitchen"
+msgstr "Oddzielna"
+
+msgid "Kitchen with Living Room"
+msgstr "Z salonem"
+
+# Media i udogodnienia
+msgid "Utilities"
+msgstr "Media"
+
+msgid "Heating"
+msgstr "Ogrzewanie"
+
+msgid "Water"
+msgstr "Woda"
+
+msgid "Sewage"
+msgstr "Kanalizacja"
+
+msgid "Gas"
+msgstr "Gaz"
+
+msgid "Amenities"
+msgstr "Udogodnienia"
+
+msgid "Elevator"
+msgstr "Winda"
+
+msgid "Furnishing"
+msgstr "Umeblowanie"
+
+msgid "Air Conditioning"
+msgstr "Klimatyzacja"
+
+msgid "Monitoring/Security"
+msgstr "Monitoring/Ochrona"
+
+msgid "Reception"
+msgstr "Recepcja"
+
+msgid "Closed Area"
+msgstr "Teren zamknięty"
+
+msgid "Intercom"
+msgstr "Domofon"
+
+# Wyposażenie
+msgid "Equipment"
+msgstr "Wyposażenie"
+
+msgid "Washing Machine"
+msgstr "Pralka"
+
+msgid "Dishwasher"
+msgstr "Zmywarka"
+
+msgid "Refrigerator"
+msgstr "Lodówka"
+
+msgid "Stove"
+msgstr "Kuchenka"
+
+msgid "Oven"
+msgstr "Piekarnik"
+
+msgid "TV"
+msgstr "Telewizor"
+
+msgid "Microwave"
+msgstr "Mikrofala"
+
+# Powierzchnie dodatkowe
+msgid "Additional Spaces"
+msgstr "Powierzchnie dodatkowe"
+
+msgid "Balcony"
+msgstr "Balkon"
+
+msgid "Terrace"
+msgstr "Taras"
+
+msgid "Basement"
+msgstr "Piwnica"
+
+msgid "Storage Room"
+msgstr "Komórka lokatorska"
+
+msgid "Garden"
+msgstr "Ogródek"
+
+# Znaczniki
+msgid "New Offer"
+msgstr "Nowa oferta"
+
+msgid "Exclusive"
+msgstr "Wyłączność"
+
+msgid "Sold"
+msgstr "Sprzedane"
+
+msgid "Rented"
+msgstr "Wynajęte"
+
+msgid "New Price"
+msgstr "Nowa cena"
+
+msgid "No Commission"
+msgstr "Bez prowizji"
+
+msgid "MLS Offer"
+msgstr "Oferta MLS"
+
+msgid "Premium"
+msgstr "Premium"
+
+msgid "Export to Website"
+msgstr "Eksport na WWW"
+
+msgid "Export to Portals"
+msgstr "Eksport na Portale"
+
+# Komunikaty
+msgid "You do not have permission to perform this operation"
+msgstr "Nie masz uprawnień do wykonania tej operacji"
+
+msgid "Would you like to add another client?"
+msgstr "Czy chcesz dodać kolejnego klienta?"
+
+msgid "Yes"
+msgstr "TAK"
+
+msgid "No"
+msgstr "NIE"
+
+msgid "Add Property"
+msgstr "Dodaj nieruchomość"
+
+msgid "Add Search"
+msgstr "Dodaj poszukiwanie"
+
+msgid "Back to List"
+msgstr "Powrót do listy"
+
+msgid "Edit"
+msgstr "Edytuj"
+
+msgid "Delete"
+msgstr "Usuń"
+
+msgid "Go to Contract"
+msgstr "Przejdź do umowy"
+
+msgid "Go to Offer/Search"
+msgstr "Przejdź do oferty/poszukiwania"
+
+msgid "Update Stage"
+msgstr "Aktualizuj etap"
+
+# Etapy umowy
+msgid "Brokerage Agreement"
+msgstr "Umowa pośrednictwa"
+
+msgid "MLS Publication"
+msgstr "Publikacja w MLS"
+
+msgid "Offer Preparation"
+msgstr "Przygotowanie oferty"
+
+msgid "Offer Publication"
+msgstr "Publikacja oferty"
+
+msgid "Marketing and Presentations"
+msgstr "Marketing i prezentacje"
+
+msgid "Purchase Offer"
+msgstr "Oferta kupna"
+
+msgid "Negotiations"
+msgstr "Negocjacje"
+
+msgid "Preliminary Agreement"
+msgstr "Umowa przedwstępna"
+
+msgid "Final Agreement"
+msgstr "Umowa przyrzeczona"
+
+msgid "Property Handover"
+msgstr "Przekazanie lokalu"
+
+msgid "Contract Completed"
+msgstr "Umowa zakończona"

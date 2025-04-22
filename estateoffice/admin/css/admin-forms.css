@@ -1,0 +1,289 @@
+/* EstateOffice Admin Forms CSS
+ * Version: 0.5.5
+ * Author: Tomasz Obarski
+ * Website: http://warszawskiagent.pl
+ */
+
+/* General Form Styles */
+.eo-form {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.eo-form-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #e5e5e5;
+    background: #fbfbfb;
+    border-radius: 3px;
+}
+
+.eo-form-section-title {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #2271b1;
+    color: #1d2327;
+}
+
+/* Form Fields */
+.eo-form-row {
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.eo-form-field {
+    flex: 1 1 300px;
+}
+
+.eo-form-field label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #1d2327;
+}
+
+.eo-form-field input[type="text"],
+.eo-form-field input[type="number"],
+.eo-form-field input[type="email"],
+.eo-form-field input[type="tel"],
+.eo-form-field input[type="date"],
+.eo-form-field select,
+.eo-form-field textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #8c8f94;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #2c3338;
+}
+
+.eo-form-field input:focus,
+.eo-form-field select:focus,
+.eo-form-field textarea:focus {
+    border-color: #2271b1;
+    box-shadow: 0 0 0 1px #2271b1;
+    outline: none;
+}
+
+/* Required Fields */
+.eo-form-field.required label:after {
+    content: "*";
+    color: #d63638;
+    margin-left: 4px;
+}
+
+/* Checkbox and Radio Groups */
+.eo-checkbox-group,
+.eo-radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.eo-checkbox-wrapper,
+.eo-radio-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Specific Form Types */
+
+/* Contract Form */
+.eo-contract-form .eo-form-section {
+    background: #fff;
+    border-left: 4px solid #2271b1;
+}
+
+.eo-contract-stages {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding: 20px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.eo-stage-item {
+    text-align: center;
+    position: relative;
+    flex: 1;
+}
+
+.eo-stage-item:not(:last-child):after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -50%;
+    width: 100%;
+    height: 2px;
+    background: #e5e5e5;
+}
+
+.eo-stage-item.active {
+    color: #2271b1;
+    font-weight: 600;
+}
+
+/* Property Form */
+.eo-property-form .eo-form-section {
+    background: #fff;
+    border-left: 4px solid #00a32a;
+}
+
+.eo-property-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.eo-property-image {
+    position: relative;
+    aspect-ratio: 4/3;
+    background: #f0f0f1;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.eo-property-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Client Form */
+.eo-client-form .eo-form-section {
+    background: #fff;
+    border-left: 4px solid #8c8f94;
+}
+
+/* Search Form */
+.eo-search-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.eo-search-form input[type="search"] {
+    flex: 1;
+    min-width: 200px;
+    padding: 8px;
+    border: 1px solid #8c8f94;
+    border-radius: 4px;
+}
+
+/* Form Buttons */
+.eo-form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.eo-button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.eo-button-primary {
+    background: #2271b1;
+    color: #fff;
+}
+
+.eo-button-primary:hover {
+    background: #135e96;
+}
+
+.eo-button-secondary {
+    background: #f6f7f7;
+    border: 1px solid #2271b1;
+    color: #2271b1;
+}
+
+.eo-button-secondary:hover {
+    background: #f0f0f1;
+}
+
+/* Validation States */
+.eo-form-field.error input,
+.eo-form-field.error select,
+.eo-form-field.error textarea {
+    border-color: #d63638;
+}
+
+.eo-form-field.error .eo-error-message {
+    color: #d63638;
+    font-size: 0.85em;
+    margin-top: 5px;
+}
+
+/* Google Maps Integration */
+.eo-map-container {
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    border: 1px solid #8c8f94;
+    border-radius: 4px;
+}
+
+.eo-map-search {
+    margin-bottom: 10px;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 782px) {
+    .eo-form-field {
+        flex: 1 1 100%;
+    }
+    
+    .eo-contract-stages {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .eo-stage-item:not(:last-child):after {
+        display: none;
+    }
+    
+    .eo-form-buttons {
+        flex-direction: column;
+    }
+    
+    .eo-button {
+        width: 100%;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .eo-form-buttons,
+    .eo-stage-item:not(.active) {
+        display: none;
+    }
+    
+    .eo-form {
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .eo-form-section {
+        break-inside: avoid;
+        border: none;
+    }
+}

@@ -1,0 +1,341 @@
+/**
+ * Styles dla formularzy frontendowych EstateOffice
+ *
+ * @package EstateOffice
+ * @subpackage Frontend/CSS
+ * @since 0.5.5
+ */
+
+/* Kontener formularza */
+.eo-form {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Pasek postępu */
+.eo-progress-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.eo-progress-bar::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #e0e0e0;
+    z-index: 1;
+}
+
+.eo-progress-step {
+    position: relative;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 50%;
+    z-index: 2;
+    color: #666;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.eo-progress-step::before {
+    content: counter(step);
+    counter-increment: step;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #e0e0e0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.5rem;
+    background: #fff;
+}
+
+.eo-progress-step.active::before {
+    border-color: #007bff;
+    background: #007bff;
+    color: #fff;
+}
+
+.eo-progress-step.completed::before {
+    border-color: #28a745;
+    background: #28a745;
+    color: #fff;
+}
+
+/* Etapy formularza */
+.eo-form-step {
+    display: none;
+}
+
+.eo-form-step.active {
+    display: block;
+}
+
+/* Sekcje formularza */
+.eo-form-section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 6px;
+}
+
+.eo-form-section h3 {
+    margin: 0 0 1.5rem;
+    color: #333;
+    font-size: 1.25rem;
+}
+
+/* Grupy formularza */
+.eo-form-group {
+    margin-bottom: 1.5rem;
+}
+
+.eo-form-row {
+    display: flex;
+    margin: 0 -0.75rem;
+    flex-wrap: wrap;
+}
+
+.eo-col-2 {
+    flex: 0 0 16.666667%;
+    padding: 0 0.75rem;
+}
+
+.eo-col-3 {
+    flex: 0 0 25%;
+    padding: 0 0.75rem;
+}
+
+.eo-col-4 {
+    flex: 0 0 33.333333%;
+    padding: 0 0.75rem;
+}
+
+.eo-col-6 {
+    flex: 0 0 50%;
+    padding: 0 0.75rem;
+}
+
+.eo-col-8 {
+    flex: 0 0 66.666667%;
+    padding: 0 0.75rem;
+}
+
+/* Etykiety */
+.eo-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #495057;
+    font-weight: 500;
+}
+
+.eo-form label.required::after {
+    content: '*';
+    color: #dc3545;
+    margin-left: 0.25rem;
+}
+
+/* Pola formularza */
+.eo-input,
+.eo-select,
+.eo-textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: border-color 0.15s ease-in-out;
+}
+
+.eo-input:focus,
+.eo-select:focus,
+.eo-textarea:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.eo-input.eo-error,
+.eo-select.eo-error {
+    border-color: #dc3545;
+}
+
+.eo-validation-message {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+/* Checkboxy i radio */
+.eo-checkbox-label,
+.eo-radio-label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.eo-checkbox,
+.eo-radio {
+    margin-right: 0.5rem;
+}
+
+.eo-checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+/* Przyciski */
+.eo-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+}
+
+.eo-button-primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.eo-button-primary:hover {
+    background-color: #0056b3;
+}
+
+.eo-button-secondary {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.eo-button-secondary:hover {
+    background-color: #545b62;
+}
+
+/* Nawigacja formularza */
+.eo-form-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #dee2e6;
+}
+
+/* Galeria */
+.eo-gallery-uploader {
+    border: 2px dashed #ced4da;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.eo-gallery-preview {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.eo-gallery-item {
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.eo-gallery-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.eo-gallery-remove {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 24px;
+    height: 24px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Mapa Google */
+.eo-map {
+    width: 100%;
+    height: 400px;
+    border-radius: 6px;
+    margin-top: 1rem;
+}
+
+/* Wyszukiwarka klientów */
+.eo-search-wrapper {
+    position: relative;
+}
+
+.eo-search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.eo-search-result {
+    padding: 0.75rem;
+    cursor: pointer;
+    border-bottom: 1px solid #ced4da;
+}
+
+.eo-search-result:hover {
+    background-color: #f8f9fa;
+}
+
+.eo-search-result:last-child {
+    border-bottom: none;
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+    .eo-form {
+        padding: 1rem;
+    }
+
+    .eo-col-2,
+    .eo-col-3,
+    .eo-col-4,
+    .eo-col-6,
+    .eo-col-8 {
+        flex: 0 0 100%;
+    }
+
+    .eo-progress-step {
+        font-size: 0.875rem;
+        padding: 0.5rem;
+    }
+}
